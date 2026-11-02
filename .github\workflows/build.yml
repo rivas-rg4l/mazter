@@ -25,11 +25,11 @@ jobs:
         shell: pwsh
         run: |
           $plugins = @(
-            @{ target = 'MasterEQ';      product = 'Master EQ' },
-            @{ target = 'MasterComp';    product = 'Master Comp' },
-            @{ target = 'MasterSat';     product = 'Master Sat' },
-            @{ target = 'MasterImager';  product = 'Master Imager' },
-            @{ target = 'MasterLimiter'; product = 'Master Limiter' }
+            @{ target = 'MasterEQ';      product = 'r-Master EQ' },
+            @{ target = 'MasterComp';    product = 'r-Master Comp' },
+            @{ target = 'MasterSat';     product = 'r-Master Sat' },
+            @{ target = 'MasterImager';  product = 'r-Master Imager' },
+            @{ target = 'MasterLimiter'; product = 'r-Master Limiter' }
           )
           New-Item -ItemType Directory -Force -Path artifacts | Out-Null
           foreach ($p in $plugins) {
